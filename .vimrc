@@ -15,7 +15,6 @@ filetype plugin indent on
 " Theme and colors stuff
 syntax enable
 set background=dark
-colorscheme generic
 
 " General stuff
 set exrc

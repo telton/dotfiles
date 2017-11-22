@@ -1,0 +1,9 @@
+advanced-new-file
+Better PHPUnit
+Docker
+File Utils
+Laravel Artisan
+php cs fixer
+PHP Intelephense
+Slime Theme
+snippet creator

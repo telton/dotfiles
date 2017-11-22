@@ -1,0 +1,23 @@
+c 
+	"Method": {
+		"prefix": "met",
+		"body": [
+			"public function foo()",
+			"{",
+			"",
+			"}"
+		],
+		"description": "New public method"
+	},
+	"Protected method": {
+		"prefix": "pmet",
+		"body": [
+			"protected function $1()",
+			"",
+			"{",
+			"\t$2",
+			"}"
+		],
+		"description": "New protected method"
+	}
+}

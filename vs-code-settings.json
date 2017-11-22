@@ -6,5 +6,12 @@
 	"editor.tabCompletion": true,
 	"php-cs-fixer.onsave": true,
 	"php-cs-fixer.config": "/home/telton/.vscode/.php_cs",
-	"window.openFilesInNewWindow": "on"
+	"window.openFilesInNewWindow": "on",
+	// An array of language ids which should be validated by ESLint
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"vue",
+		"vue-html"
+	  ]
 }

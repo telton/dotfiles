@@ -1,9 +1,15 @@
 advanced-new-file
+Auto Close Tag
 Better PHPUnit
 Docker
+ESLint
 File Utils
 Laravel Artisan
+Laravel Blade Snippets
+Markdown PDF
 php cs fixer
 PHP Intelephense
 Slime Theme
 snippet creator
+Vetur
+VSCode Great Icons

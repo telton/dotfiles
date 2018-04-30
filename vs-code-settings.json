@@ -1,7 +1,7 @@
 {
 	"workbench.statusBar.visible": false,
 	"explorer.openEditors.visible": 0,
-	"workbench.colorTheme": "Slime",
+	"workbench.colorTheme": "Material Theme Palenight",
 	"workbench.activityBar.visible": false,
 	"editor.tabCompletion": true,
 	"php-cs-fixer.onsave": true,
@@ -13,5 +13,6 @@
 		"javascriptreact",
 		"vue",
 		"vue-html"
-	  ]
+	],
+	"workbench.iconTheme": "eq-material-theme-icons"
 }

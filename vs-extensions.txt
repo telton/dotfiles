@@ -1,5 +1,6 @@
 advanced-new-file
 Auto Close Tag
+Auto Rename Tag
 Better PHPUnit
 Docker
 ESLint
@@ -7,6 +8,9 @@ File Utils
 Laravel Artisan
 Laravel Blade Snippets
 Markdown PDF
+Material Icon Theme
+Material Palenight Theme
+Material Theme
 php cs fixer
 PHP Intelephense
 Slime Theme

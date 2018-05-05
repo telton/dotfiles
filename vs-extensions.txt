@@ -14,6 +14,6 @@ Material Theme
 php cs fixer
 PHP Intelephense
 Slime Theme
-snippet creator
+snippet-creator
 Vetur
 VSCode Great Icons

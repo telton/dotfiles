@@ -13,7 +13,6 @@ Material Palenight Theme
 Material Theme
 php cs fixer
 PHP Intelephense
-Slime Theme
 snippet-creator
 Vetur
 VSCode Great Icons

@@ -1,17 +1,21 @@
 advanced-new-file
 Auto Rename Tag
 Better PHPUnit
+Docker
 ESLint
 File Utils
+gitignore
 Laravel Artisan
 Laravel Blade Snippets
+Lorem ipsum
 Markdown PDF
 Material Icon Theme
 Material Palenight Theme
 Material Theme
+Path Intellisense
+Project Manager
 php cs fixer
 PHP Intelephense
 snippet-creator
-Swiss Army Knife
 Vetur
 VSCode Great Icons

@@ -9,6 +9,7 @@ Laravel Artisan
 Laravel Blade Snippets
 Lorem ipsum
 Markdown PDF
+Markdownlint
 Material Icon Theme
 Material Palenight Theme
 Material Theme

@@ -19,4 +19,3 @@ php cs fixer
 PHP Intelephense
 snippet-creator
 Vetur
-VSCode Great Icons

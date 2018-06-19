@@ -9,6 +9,7 @@ Laravel Artisan
 Laravel Blade Snippets
 Lorem ipsum
 Markdown PDF
+Markdownlint
 Material Icon Theme
 Material Palenight Theme
 Material Theme
@@ -18,4 +19,3 @@ php cs fixer
 PHP Intelephense
 snippet-creator
 Vetur
-VSCode Great Icons

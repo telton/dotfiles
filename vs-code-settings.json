@@ -14,5 +14,6 @@
 		"vue",
 		"vue-html"
 	],
-	"workbench.iconTheme": "eq-material-theme-icons"
+	"workbench.iconTheme": "eq-material-theme-icons",
+	"editor.minimap.enabled": false
 }

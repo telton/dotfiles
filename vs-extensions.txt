@@ -1,5 +1,6 @@
 advanced-new-file
 Auto Rename Tag
+Auto Close Tag
 Better PHPUnit
 Docker
 ESLint

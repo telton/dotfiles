@@ -15,5 +15,12 @@
 		"vue-html"
 	],
 	"workbench.iconTheme": "eq-material-theme-icons",
-	"editor.minimap.enabled": false
+	"editor.minimap.enabled": false,
+	"window.menuBarVisibility": "toggle",
+	"gitlens.advanced.messages": {
+		"suppressShowKeyBindingsNotice": true
+	},
+	"editor.fontSize": 10,
+	"editor.fontLigatures": true,
+	"editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'"
 }

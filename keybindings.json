@@ -20,7 +20,7 @@
     {
         "key": "ctrl+t",
         "command": "-workbench.action.showAllSymbols"
-    }
+    },
     // Toggle between terminal and editor focus
     { 
         "key": "ctrl+`", 

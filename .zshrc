@@ -1,18 +1,19 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.composer/vendor/bin:$HOME/.nvm:$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/telton/.oh-my-zsh"
+export ZSH=/home/telton/.oh-my-zsh
 
 source ~/antigen.zsh
+antigen use oh-my-zsh
+antigen bundle git 
+antigen bundle tomsquest/nvm-auto-use.zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen apply
 
 # User configuration
 bindkey '^ ' autosuggest-execute
-
-antigen theme arrow
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -102,3 +103,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Import aliases.
+source ~/.aliases
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

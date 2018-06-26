@@ -1,0 +1,3 @@
+alias docker-up='function _dockerup() { docker-compose up $1 -d }; _dockerup'
+alias docker-down='function _dockerdown() { docker-compose down }; _dockerdown'
+alias docker-bash='function _dockerbash() { docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -ti $1 bash }; _dockerbash'

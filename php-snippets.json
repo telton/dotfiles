@@ -1,4 +1,4 @@
-{ 
+{
 	"Method": {
 		"prefix": "met",
 		"body": [
@@ -19,5 +19,40 @@
 			"}"
 		],
 		"description": "New protected method"
+	},
+	"Test Method": {
+		"prefix": "mtest",
+		"body": [
+			"/** @test */",
+			"function the_one_where()",
+			"{",
+			"\t//",
+			"}"
+		]
+	},
+	"Example Test": {
+		"prefix": "utest",
+		"body": [
+			"<?php",
+			"",
+			"namespace Tests\\Feature;",
+			"",
+			"use Tests\\TestCase;",
+			"",
+			"class ExampleTest extends TestCase",
+			"{",
+			"\t/**",
+			"\t* A basic test example.",
+			"\t*",
+			"\t* @return void",
+			"\t*/",
+			"\tpublic function testBasicTest()",
+			"\t{",
+			"\t\t$response = $this->get('/');",
+			"\t\t",
+			"\t\t$response->assertStatus(200);",
+			"\t}",
+			"}"
+		]
 	}
 }

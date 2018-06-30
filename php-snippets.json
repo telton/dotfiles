@@ -21,17 +21,17 @@
 		"description": "New protected method"
 	},
 	"Test Method": {
-		"prefix": "mtest",
+		"prefix": "test",
 		"body": [
 			"/** @test */",
 			"function the_one_where()",
 			"{",
-			"\t//",
+			"\t// Test code...",
 			"}"
 		]
 	},
 	"Example Test": {
-		"prefix": "utest",
+		"prefix": "testcase",
 		"body": [
 			"<?php",
 			"",
@@ -41,18 +41,13 @@
 			"",
 			"class ExampleTest extends TestCase",
 			"{",
-			"\t/**",
-			"\t* A basic test example.",
-			"\t*",
-			"\t* @return void",
-			"\t*/",
-			"\tpublic function testBasicTest()",
+			"\t/** @test */",
+			"\tpublic function the_one_where()",
 			"\t{",
-			"\t\t$response = $this->get('/');",
-			"\t\t",
-			"\t\t$response->assertStatus(200);",
+			"\t\t// Test code...",
 			"\t}",
-			"}"
+			"}",
+			""
 		]
 	}
 }

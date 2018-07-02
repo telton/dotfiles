@@ -30,5 +30,13 @@
         "key": "ctrl+`", 
         "command": "workbench.action.focusActiveEditorGroup", 
         "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+alt+t",
+        "command": "workbench.action.reopenClosedEditor"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "better-phpunit.run"
     }
 ]

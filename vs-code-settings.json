@@ -1,7 +1,7 @@
 {
 	"workbench.statusBar.visible": false,
 	"explorer.openEditors.visible": 0,
-	"workbench.colorTheme": "Material Theme Palenight",
+	"workbench.colorTheme": "Palenight Italic",
 	"workbench.activityBar.visible": false,
 	"editor.tabCompletion": true,
 	"php-cs-fixer.onsave": true,
@@ -13,7 +13,7 @@
 		"vue",
 		"vue-html"
 	],
-	"workbench.iconTheme": "eq-material-theme-icons",
+	"workbench.iconTheme": "eq-material-theme-icons-palenight",
 	"editor.minimap.enabled": false,
 	"window.menuBarVisibility": "toggle",
 	"gitlens.advanced.messages": {
@@ -22,5 +22,8 @@
 	"editor.fontSize": 10,
 	"editor.fontLigatures": true,
 	"editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-	"scss.validate": false
+	"terminal.integrated.rendererType": "dom",
+	"scss.validate": false,
+	"materialTheme.fixIconsRunning": false,
+	"window.titleBarStyle": "custom"
 }

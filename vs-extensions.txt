@@ -3,6 +3,7 @@ Auto Rename Tag
 Auto Close Tag
 Better PHPUnit
 Docker
+DotENV
 ESLint
 File Utils
 gitignore

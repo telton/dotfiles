@@ -4,9 +4,6 @@ export PATH=$HOME/bin:/usr/local/bin:/home/telton/.config/composer/vendor/bin:$P
 # Path to your oh-my-zsh installation.
 export ZSH=/home/telton/.oh-my-zsh
 
-export JAVA_HOME=$(update-alternatives --query javac | sed -n -e 's/Best: *\(.*\)\/bin\/javac/\1/p')
-export ANDROID_HOME=/android/sdk
-
 source ~/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle git 
@@ -108,9 +105,3 @@ source $ZSH/oh-my-zsh.sh
 
 # Import aliases.
 source ~/.aliases
-
-###-tns-completion-start-###
-if [ -f /home/telton/.tnsrc ]; then 
-    source /home/telton/.tnsrc 
-fi
-###-tns-completion-end-###

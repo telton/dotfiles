@@ -1,7 +1,7 @@
 {
 	"workbench.statusBar.visible": false,
 	"explorer.openEditors.visible": 0,
-	"workbench.colorTheme": "Palenight Italic",
+	"workbench.colorTheme": "Palenight Operator",
 	"workbench.activityBar.visible": false,
 	"editor.tabCompletion": true,
 	"php-cs-fixer.onsave": true,
@@ -22,5 +22,7 @@
 	"terminal.integrated.rendererType": "dom",
 	"scss.validate": false,
 	"materialTheme.fixIconsRunning": false,
-	"window.titleBarStyle": "custom"
+	"window.titleBarStyle": "custom",
+	"explorer.autoReveal": false,
+	"editor.formatOnSave": true
 }

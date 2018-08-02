@@ -1,3 +1,13 @@
+# Docker aliases
 alias docker-up='function _dockerup() { docker-compose up $1 -d }; _dockerup'
 alias docker-down='function _dockerdown() { docker-compose down }; _dockerdown'
 alias docker-bash='function _dockerbash() { docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -ti $1 bash }; _dockerbash'
+
+# Git aliases
+alias gs='git status'
+alias ga='git add'
+alias gaa='git add .'
+alias gc='function _gc() { git commit -m "$1"  }; _gc'
+
+# Laravel aliases
+alias artisan='php artisan'

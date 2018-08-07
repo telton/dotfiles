@@ -24,5 +24,6 @@
 	"materialTheme.fixIconsRunning": false,
 	"window.titleBarStyle": "custom",
 	"explorer.autoReveal": false,
-	"editor.formatOnSave": true
+	"editor.formatOnSave": true,
+	"search.useIgnoreFiles": false
 }

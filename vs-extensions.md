@@ -46,8 +46,6 @@
 
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
-- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-
 - [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
 
 - [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
@@ -73,3 +71,5 @@
 - [snippet-creator](https://marketplace.visualstudio.com/items?itemName=nikitaKunevich.snippet-creator)
 
 - [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+
+- [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)

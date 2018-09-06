@@ -16,9 +16,20 @@
   "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "terminal.integrated.rendererType": "dom",
   "scss.validate": false,
-  "materialTheme.fixIconsRunning": false,
   "window.titleBarStyle": "custom",
   "explorer.autoReveal": false,
   "editor.formatOnSave": true,
-  "search.useIgnoreFiles": false
+  "search.useIgnoreFiles": false,
+  "cSpell.userWords": [
+    "autoload",
+    "guzzlehttp",
+    "laravel",
+    "phpunit",
+    "tailwindcss",
+    "unminified",
+    "unprocessable",
+    "wheelertrucking"
+  ],
+  "better-phpunit.phpunitBinary": "/vendor/bin/phpunit"
 }
+

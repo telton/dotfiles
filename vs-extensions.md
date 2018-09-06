@@ -28,19 +28,7 @@
 
 - [gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore)
 
-- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
-
-- [JS Refactor](https://marketplace.visualstudio.com/items?itemName=cmstead.jsrefactor)
-
-- [Laravel 5 Snippets](https://marketplace.visualstudio.com/items?itemName=sachittandukar.laravel-5-snippets)
-
-- [Laravel Artisan](https://marketplace.visualstudio.com/items?itemName=ryannaddy.laravel-artisan)
-
-- [Laravel Blade Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade)
-
 - [LaserWave](https://marketplace.visualstudio.com/items?itemName=jaredkent.laserwave)
-
-- [Lorem ipsum](https://marketplace.visualstudio.com/items?itemName=Tyriar.lorem-ipsum)
 
 - [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)
 

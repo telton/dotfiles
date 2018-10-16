@@ -1,7 +1,7 @@
 {
   "workbench.statusBar.visible": false,
   "explorer.openEditors.visible": 0,
-  "workbench.colorTheme": "LaserWave Italic",
+  "workbench.colorTheme": "Dracula",
   "workbench.activityBar.visible": false,
   "editor.tabCompletion": true,
   "php-cs-fixer.onsave": true,
@@ -11,7 +11,6 @@
   "workbench.iconTheme": "vscode-great-icons",
   "editor.minimap.enabled": false,
   "window.menuBarVisibility": "toggle",
-  "editor.fontSize": 10,
   "editor.fontLigatures": true,
   "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "terminal.integrated.rendererType": "dom",
@@ -19,6 +18,12 @@
   "window.titleBarStyle": "custom",
   "explorer.autoReveal": false,
   "editor.formatOnSave": true,
+  // turn it off for JS
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
   "search.useIgnoreFiles": false,
   "cSpell.userWords": [
     "autoload",
@@ -30,6 +35,52 @@
     "unprocessable",
     "wheelertrucking"
   ],
-  "better-phpunit.phpunitBinary": "/vendor/bin/phpunit"
+  "better-phpunit.phpunitBinary": "/vendor/bin/phpunit",
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "css.lint.unknownAtRules": "ignore",
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+  "prettier.printWidth": 120,
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.lastDownload": 1539024266240,
+  "prettier.eslintIntegration": true,
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.wordWrap": "on",
+  "editor.cursorBlinking": "solid",
+  "editor.colorDecorators": false,
+  "editor.renderWhitespace": "none",
+  "editor.rulers": [80, 100, 120],
+  "workbench.startupEditor": "newUntitledFile",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.next": true
+  },
+  "workbench.editor.tabCloseButton": "off",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html"
+  },
+  // show snippets before any other auto completion
+  "editor.snippetSuggestions": "top",
+  // this lets you quickly open multiple items in a row and not have the previous ones closed on you
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
+  "[git-commit]": {
+    "editor.rulers": [72]
+  },
+  "workbench.editor.tabSizing": "shrink",
+  "html.format.enable": true,
+  "html.format.preserveNewLines": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "window.zoomLevel": -1,
+  "editor.fontSize": 12,
+  "editor.lineHeight": 16,
+  "editor.letterSpacing": 0.5,
+  "editor.fontWeight": "400"
 }
-

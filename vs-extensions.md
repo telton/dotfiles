@@ -22,13 +22,15 @@
 
 - [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
 
+- [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
+
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 - [File Utils](https://marketplace.visualstudio.com/items?itemName=sleistner.vscode-fileutils)
 
 - [gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore)
 
-- [LaserWave](https://marketplace.visualstudio.com/items?itemName=jaredkent.laserwave)
+- [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
 
 - [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)
 
@@ -48,8 +50,6 @@
 
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-- [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
-
 - [Rainbow Brackets](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets)
 
 - [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
@@ -58,6 +58,10 @@
 
 - [snippet-creator](https://marketplace.visualstudio.com/items?itemName=nikitaKunevich.snippet-creator)
 
+- [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
+
 - [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 
 - [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
+
+- [Vue Peek](https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vue-peek)

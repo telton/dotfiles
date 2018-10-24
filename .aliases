@@ -2,6 +2,8 @@
 alias docker-up='function _dockerup() { docker-compose up $1 -d }; _dockerup'
 alias docker-down='function _dockerdown() { docker-compose down }; _dockerdown'
 alias docker-bash='function _dockerbash() { docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -ti $1 bash }; _dockerbash'
+alias docker-stop='function _dockerstop() { docker-compose stop }; _dockerstop'
+alias docker-start='function _dockerstart() { docker-compose start }; _dockerstart'
 
 # Git aliases
 alias gs='git status'
@@ -11,3 +13,6 @@ alias gc='function _gc() { git commit -m "$1"  }; _gc'
 
 # Laravel aliases
 alias artisan='php artisan'
+
+# Unix aliases
+alias code='cd ~/code'

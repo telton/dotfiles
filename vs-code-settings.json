@@ -36,13 +36,16 @@
     "wheelertrucking"
   ],
   "better-phpunit.phpunitBinary": "/vendor/bin/phpunit",
-  "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "css.lint.unknownAtRules": "ignore",
-  "vetur.format.defaultFormatter.html": "prettyhtml",
-  "prettier.printWidth": 120,
+  "vetur.format.defaultFormatterOptions": {
+    "prettyhtml": {
+      "printWidth": 80, // No line exceeds 100 characters
+      "singleQuote": true // Prefer double quotes over single quotes
+    }
+  },
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1539024266240,
+  "php-cs-fixer.lastDownload": 1539952726166,
   "prettier.eslintIntegration": true,
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 3,
@@ -82,5 +85,8 @@
   "editor.fontSize": 12,
   "editor.lineHeight": 16,
   "editor.letterSpacing": 0.5,
-  "editor.fontWeight": "400"
+  "editor.fontWeight": "400",
+  "eslint.packageManager": "yarn",
+  "html.format.wrapAttributes": "force-expand-multiline",
+  "html.format.wrapLineLength": 80
 }

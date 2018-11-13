@@ -1,7 +1,7 @@
 {
   "workbench.statusBar.visible": false,
   "explorer.openEditors.visible": 0,
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "LaserWave Italic",
   "workbench.activityBar.visible": false,
   "editor.tabCompletion": true,
   "php-cs-fixer.onsave": true,
@@ -33,6 +33,7 @@
     "tailwindcss",
     "unminified",
     "unprocessable",
+    "webhook",
     "wheelertrucking"
   ],
   "better-phpunit.phpunitBinary": "/vendor/bin/phpunit",
@@ -45,7 +46,7 @@
     }
   },
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1539952726166,
+  "php-cs-fixer.lastDownload": 1541688601171,
   "prettier.eslintIntegration": true,
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 3,
@@ -80,7 +81,6 @@
   "html.format.enable": true,
   "html.format.preserveNewLines": true,
   "files.trimTrailingWhitespace": true,
-  "editor.tabSize": 2,
   "window.zoomLevel": -1,
   "editor.fontSize": 12,
   "editor.lineHeight": 16,

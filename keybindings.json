@@ -38,6 +38,27 @@
   {
     "key": "ctrl+t",
     "command": "better-phpunit.run"
+  },
+  { "key": "ctrl+]", "command": "workbench.action.nextEditor" },
+  { "key": "ctrl+[", "command": "workbench.action.previousEditor" },
+  {
+    "key": "ctrl+]",
+    "command": "workbench.action.nextSideBarView",
+    "when": "sideBarFocus"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "workbench.action.previousSideBarView",
+    "when": "sideBarFocus"
+  },
+  {
+    "key": "ctrl+]",
+    "command": "workbench.action.nextPanelView",
+    "when": "panelFocus"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "workbench.action.previousPanelView",
+    "when": "panelFocus"
   }
 ]
-

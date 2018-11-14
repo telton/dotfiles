@@ -39,6 +39,10 @@
     "key": "ctrl+t",
     "command": "better-phpunit.run"
   },
+  {
+    "key": "ctrl+shift+t",
+    "command": "better-phpunit.run-suite"
+  }
   { "key": "ctrl+]", "command": "workbench.action.nextEditor" },
   { "key": "ctrl+[", "command": "workbench.action.previousEditor" },
   {

@@ -36,7 +36,7 @@
     "webhook",
     "wheelertrucking"
   ],
-  "better-phpunit.phpunitBinary": "/vendor/bin/phpunit",
+  "better-phpunit.phpunitBinary": "vendor/bin/phpunit",
   "prettier.trailingComma": "es5",
   "css.lint.unknownAtRules": "ignore",
   "vetur.format.defaultFormatterOptions": {

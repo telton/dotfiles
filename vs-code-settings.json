@@ -1,9 +1,9 @@
 {
   "workbench.statusBar.visible": false,
   "explorer.openEditors.visible": 0,
-  "workbench.colorTheme": "LaserWave Italic",
+  "workbench.colorTheme": "Monokai Dimmed",
   "workbench.activityBar.visible": false,
-  "editor.tabCompletion": true,
+  "editor.tabCompletion": "on",
   "php-cs-fixer.onsave": true,
   "php-cs-fixer.config": "/home/telton/.vscode/.php_cs",
   "window.openFilesInNewWindow": "on",

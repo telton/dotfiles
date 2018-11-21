@@ -1,13 +1,11 @@
 {
   "workbench.statusBar.visible": false,
   "explorer.openEditors.visible": 0,
-  "workbench.colorTheme": "Monokai Dimmed",
   "workbench.activityBar.visible": false,
   "editor.tabCompletion": "on",
   "php-cs-fixer.onsave": true,
   "php-cs-fixer.config": "/home/telton/.vscode/.php_cs",
   "window.openFilesInNewWindow": "on",
-  "eslint.validate": ["javascript", "javascriptreact", "vue", "vue-html"],
   "workbench.iconTheme": "vscode-great-icons",
   "editor.minimap.enabled": false,
   "window.menuBarVisibility": "toggle",
@@ -18,10 +16,6 @@
   "window.titleBarStyle": "custom",
   "explorer.autoReveal": false,
   "editor.formatOnSave": true,
-  // turn it off for JS
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
   "eslint.autoFixOnSave": true,
   "eslint.alwaysShowStatus": true,
   "search.useIgnoreFiles": false,
@@ -46,7 +40,7 @@
     }
   },
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1541688601171,
+  "php-cs-fixer.lastDownload": 1542725020397,
   "prettier.eslintIntegration": true,
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 3,
@@ -88,5 +82,30 @@
   "editor.fontWeight": "400",
   "eslint.packageManager": "yarn",
   "html.format.wrapAttributes": "force-expand-multiline",
-  "html.format.wrapLineLength": 80
+  "html.format.wrapLineLength": 80,
+  "vetur.validation.template": false,
+  "vetur.format.defaultFormatter.scss": "prettier",
+  "vetur.format.defaultFormatter.css": "prettier",
+  "vetur.format.defaultFormatter.js": "prettier",
+  "eslint.options": { "extensions": [".html", ".js", ".vue", ".jsx"] },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    "vue-html"
+  ],
+  "javascript.validate.enable": false,
+  "javascript.format.enable": false,
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[scss]": {
+    "editor.tabSize": 2
+  },
+  "[css]": {
+    "editor.tabSize": 2
+  }
 }

@@ -15,4 +15,5 @@ alias gc='function _gc() { git commit -m "$1"  }; _gc'
 alias artisan='php artisan'
 
 # Unix aliases
-alias code='cd ~/code'
+alias please='sudo $(fc -ln -1)'
+

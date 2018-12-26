@@ -77,7 +77,7 @@
   "files.trimTrailingWhitespace": true,
   "window.zoomLevel": -1,
   "editor.fontSize": 12,
-  "editor.lineHeight": 16,
+  "editor.lineHeight": 18,
   "editor.letterSpacing": 0.5,
   "editor.fontWeight": "400",
   "eslint.packageManager": "yarn",
@@ -85,8 +85,6 @@
   "html.format.wrapLineLength": 80,
   "vetur.validation.template": false,
   "vetur.format.defaultFormatter.scss": "prettier",
-  "vetur.format.defaultFormatter.css": "prettier",
-  "vetur.format.defaultFormatter.js": "prettier",
   "eslint.options": { "extensions": [".html", ".js", ".vue", ".jsx"] },
   "eslint.validate": [
     "javascript",
@@ -99,13 +97,6 @@
   ],
   "javascript.validate.enable": false,
   "javascript.format.enable": false,
-  "[javascript]": {
-    "editor.tabSize": 2
-  },
-  "[scss]": {
-    "editor.tabSize": 2
-  },
-  "[css]": {
-    "editor.tabSize": 2
-  }
+  "php.validate.executablePath": "/usr/bin/php",
+  "vetur.format.defaultFormatter.html": "js-beautify-html"
 }

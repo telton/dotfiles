@@ -40,7 +40,7 @@
     }
   },
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1542725020397,
+  "php-cs-fixer.lastDownload": 1546440946317,
   "prettier.eslintIntegration": true,
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 3,
@@ -98,5 +98,7 @@
   "javascript.validate.enable": false,
   "javascript.format.enable": false,
   "php.validate.executablePath": "/usr/bin/php",
-  "vetur.format.defaultFormatter.html": "js-beautify-html"
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "editor.parameterHints.enabled": false,
+  "workbench.editor.enablePreview": false
 }

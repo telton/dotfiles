@@ -28,10 +28,6 @@
 
 - [gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore)
 
-- [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
-
-- [LaserWave](https://marketplace.visualstudio.com/items?itemName=jaredkent.laserwave)
-
 - [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)
 
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)

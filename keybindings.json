@@ -1,68 +1,110 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-  {
-    "key": "alt+enter",
-    "command": "editor.action.showContextMenu",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+alt+o",
-    "command": "workbench.action.gotoSymbol"
-  },
-  {
-    "key": "ctrl+shift+o",
-    "command": "-workbench.action.gotoSymbol"
-  },
-  {
-    "key": "ctrl+shift+o",
-    "command": "workbench.action.showAllSymbols"
-  },
-  {
-    "key": "ctrl+t",
-    "command": "-workbench.action.showAllSymbols"
-  },
-  // Toggle between terminal and editor focus
-  {
-    "key": "ctrl+`",
-    "command": "workbench.action.terminal.focus"
-  },
-  {
-    "key": "ctrl+`",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+alt+t",
-    "command": "workbench.action.reopenClosedEditor"
-  },
-  {
-    "key": "ctrl+t",
-    "command": "better-phpunit.run"
-  },
-  {
-    "key": "ctrl+shift+t",
-    "command": "better-phpunit.run-suite"
-  }
-  { "key": "ctrl+]", "command": "workbench.action.nextEditor" },
-  { "key": "ctrl+[", "command": "workbench.action.previousEditor" },
-  {
-    "key": "ctrl+]",
-    "command": "workbench.action.nextSideBarView",
-    "when": "sideBarFocus"
-  },
-  {
-    "key": "ctrl+[",
-    "command": "workbench.action.previousSideBarView",
-    "when": "sideBarFocus"
-  },
-  {
-    "key": "ctrl+]",
-    "command": "workbench.action.nextPanelView",
-    "when": "panelFocus"
-  },
-  {
-    "key": "ctrl+[",
-    "command": "workbench.action.previousPanelView",
-    "when": "panelFocus"
-  }
+	{
+		"key": "alt+enter",
+		"command": "editor.action.showContextMenu",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+o",
+		"command": "workbench.action.gotoSymbol"
+	},
+	{
+		"key": "ctrl+shift+o",
+		"command": "workbench.action.showAllSymbols"
+	},
+	// Toggle between terminal and editor focus
+	{
+		"key": "ctrl+`",
+		"command": "workbench.action.terminal.focus"
+	},
+	{
+		"key": "ctrl+`",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+alt+t",
+		"command": "workbench.action.reopenClosedEditor"
+	},
+	{
+		"key": "ctrl+]",
+		"command": "workbench.action.nextSideBarView",
+		"when": "sideBarFocus"
+	},
+	{
+		"key": "ctrl+[",
+		"command": "workbench.action.previousSideBarView",
+		"when": "sideBarFocus"
+	},
+	{
+		"key": "ctrl+]",
+		"command": "workbench.action.nextPanelView",
+		"when": "panelFocus"
+	},
+	{
+		"key": "ctrl+[",
+		"command": "workbench.action.previousPanelView",
+		"when": "panelFocus"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "cursorMove",
+		"args": {
+			"to": "up",
+			"by": "line",
+			"value": 5
+		},
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "cursorMove",
+		"args": {
+			"to": "down",
+			"by": "line",
+			"value": 5
+		},
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+right",
+		"command": "workbench.action.terminal.focusNext",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "alt+left",
+		"command": "workbench.action.terminal.focusPrevious",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+left",
+		"command": "workbench.action.terminal.focusPreviousPane",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+right",
+		"command": "workbench.action.terminal.focusNextPane",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "alt+right",
+		"command": "-workbench.action.terminal.focusNextPane",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "alt+up",
+		"command": "-workbench.action.terminal.focusPreviousPane",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "alt+left",
+		"command": "-workbench.action.terminal.focusPreviousPane",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "alt+down",
+		"command": "-workbench.action.terminal.focusNextPane",
+		"when": "terminalFocus"
+	}
 ]

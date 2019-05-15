@@ -21,7 +21,7 @@
 	"css.lint.unknownAtRules": "ignore",
 	"vetur.format.defaultFormatterOptions": {
 		"prettyhtml": {
-			"printWidth": 80, // No line exceeds 100 characters
+			"printWidth": 80, // No line exceeds 80 characters
 			"singleQuote": true // Prefer double quotes over single quotes
 		}
 	},
@@ -32,7 +32,7 @@
 	"editor.cursorBlinking": "solid",
 	"editor.colorDecorators": false,
 	"editor.renderWhitespace": "none",
-	"editor.rulers": [80, 100, 120],
+	"editor.rulers": [80],
 	"workbench.startupEditor": "newUntitledFile",
 	"files.exclude": {
 		"**/.git": true,
@@ -40,7 +40,8 @@
 		"**/.hg": true,
 		"**/CVS": true,
 		"**/.DS_Store": true,
-		"**/.next": true
+		"**/.next": true,
+		"**/.nuxt": true
 	},
 	"workbench.editor.tabCloseButton": "off",
 	"emmet.includeLanguages": {
@@ -66,7 +67,7 @@
 	"editor.fontWeight": "400",
 	"eslint.packageManager": "npm",
 	"html.format.wrapAttributes": "force-expand-multiline",
-	"html.format.wrapLineLength": 100,
+	"html.format.wrapLineLength": 80,
 	"vetur.validation.template": false,
 	"vetur.format.defaultFormatter.scss": "prettier",
 	"eslint.options": { "extensions": [".html", ".js", ".vue", ".jsx"] },
@@ -90,7 +91,7 @@
 	"files.associations": {
 		"*.vue": "vue"
 	},
-	"prettier.printWidth": 100,
+	"prettier.printWidth": 80,
 	"javascript.preferences.quoteStyle": "single",
 	"files.eol": "\n",
 	"workbench.colorCustomizations": {
@@ -104,5 +105,6 @@
 			"editorGroup.emptyBackground": "#011627",
 			"sideBar.border": "#102A44"
 		}
-	}
+	},
+	"prettier.singleQuote": true
 }

@@ -48,6 +48,10 @@
 
 -   [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
 
+-   [Toggle Quotes](https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes)
+
+-   [Wrap Console Log Simple](https://marketplace.visualstudio.com/items?itemName=WooodHead.vscode-wrap-console-log-simple)
+
 -   [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 
 -   [Vue Peek](https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vue-peek)

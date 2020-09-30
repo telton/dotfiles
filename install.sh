@@ -22,6 +22,9 @@ cp .zshrc ~/.zshrc
 # Install zsh theme.
 cp classyTouch.zsh-theme ~/.oh-my-zsh/themes/
 
+# Install Homebrew.
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
 # Fetch new source.
 echo 'Done!'
 source ~/.zshrc

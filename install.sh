@@ -31,10 +31,16 @@ cp .zshrc ~/.zshrc
 # Install zsh theme.
 cp classyTouch.zsh-theme ~/.oh-my-zsh/themes/
 
+# Configure git.
 git config --global user.name "$git_name"
 git config --global user.email "$git_email"
 cp ./gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
+
+# Create code directory.
+if [[ ! -d "$code_dir" ]]; then
+    mkdir -p $HOME/code
+fi
 
 # Fetch new source.
 echo 'Done!'

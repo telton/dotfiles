@@ -1,5 +1,8 @@
 #!/bin/bash
 
+git_name="Tyler Elton"
+git_email="telton007@gmail.com"
+
 case `uname` in
     Darwin)
         ./install_osx.sh
@@ -27,6 +30,11 @@ cp .zshrc ~/.zshrc
 
 # Install zsh theme.
 cp classyTouch.zsh-theme ~/.oh-my-zsh/themes/
+
+git config --global user.name "$git_name"
+git config --global user.email "$git_email"
+cp ./gitignore_global ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
 
 # Fetch new source.
 echo 'Done!'

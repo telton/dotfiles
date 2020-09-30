@@ -1,7 +1,13 @@
 #!/bin/bash
 
-# Install zsh.
-sudo apt-get update && sudo apt-get install zsh curl git -y
+case `uname` in
+    Darwin)
+        ./install_osx.sh
+    ;;
+    Linux)
+        ./install_linux.sh
+    ;;
+esac
 
 # Install oh-my-zsh.
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -21,9 +27,6 @@ cp .zshrc ~/.zshrc
 
 # Install zsh theme.
 cp classyTouch.zsh-theme ~/.oh-my-zsh/themes/
-
-# Install Homebrew.
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Fetch new source.
 echo 'Done!'

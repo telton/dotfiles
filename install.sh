@@ -1,7 +1,16 @@
 #!/bin/bash
 
-# Install zsh.
-sudo apt-get update && sudo apt-get install zsh curl git -y
+git_name="Tyler Elton"
+git_email="telton007@gmail.com"
+
+case `uname` in
+    Darwin)
+        ./install_osx.sh
+    ;;
+    Linux)
+        ./install_linux.sh
+    ;;
+esac
 
 # Install oh-my-zsh.
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -21,6 +30,11 @@ cp .zshrc ~/.zshrc
 
 # Install zsh theme.
 cp classyTouch.zsh-theme ~/.oh-my-zsh/themes/
+
+git config --global user.name "$git_name"
+git config --global user.email "$git_email"
+cp ./gitignore_global ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
 
 # Fetch new source.
 echo 'Done!'

@@ -7,4 +7,4 @@
 brew install zsh git curl-openssl
 
 # Install languages.
-brew install go python
+brew install python

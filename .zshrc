@@ -6,7 +6,7 @@ export ZSH=/home/telton/.oh-my-zsh
 
 source ~/antigen.zsh
 antigen use oh-my-zsh
-antigen bundle git 
+antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen apply
@@ -102,6 +102,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# asdf
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
 
 # Import aliases.
 source ~/.aliases

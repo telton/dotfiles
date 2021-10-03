@@ -42,6 +42,10 @@ if [[ ! -d "$code_dir" ]]; then
     mkdir -p $HOME/code
 fi
 
+# asdf install
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+
 # Fetch new source.
-echo 'Done!'
 source ~/.zshrc
+
+echo 'Done!'

@@ -16,9 +16,6 @@ alias gfrf='git flow release finish $1'
 alias gfhf='git flow hotfix start $1'
 alias gfhf='git flow hotfix finish $1'
 
-# Laravel aliases
-alias artisan='php artisan'
-
 # NPM aliases
 alias ni='npm install'
 alias nis='npm install --save $1'

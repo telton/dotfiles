@@ -8,14 +8,6 @@ alias gb="git branch"
 alias gco='git checkout'
 alias gm='git merge --no-ff'
 
-# Gitflow aliases
-alias gffs='git flow feature start $1'
-alias gfff='git flow feature finish $1'
-alias gfrs='git flow release start $1'
-alias gfrf='git flow release finish $1'
-alias gfhf='git flow hotfix start $1'
-alias gfhf='git flow hotfix finish $1'
-
 # NPM aliases
 alias ni='npm install'
 alias nis='npm install --save $1'

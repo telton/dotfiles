@@ -48,4 +48,7 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 # Fetch new source.
 source ~/.zshrc
 
+# Install asdf-nodejs plugin
+asdf plugin install nodejs
+
 echo 'Done!'

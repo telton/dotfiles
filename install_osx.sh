@@ -5,6 +5,3 @@
 
 # Install services.
 brew install zsh git curl-openssl
-
-# Install languages.
-brew install python

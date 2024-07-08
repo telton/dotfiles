@@ -8,11 +8,5 @@ alias gb="git branch"
 alias gco='git checkout'
 alias gm='git merge --no-ff'
 
-# NPM aliases
-alias ni='npm install'
-alias nis='npm install --save $1'
-alias nisd='npm install --save-dev $1'
-alias nr='npm run $1'
-
 # Unix aliases
 alias please='sudo $(fc -ln -1)'

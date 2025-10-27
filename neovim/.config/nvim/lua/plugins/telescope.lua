@@ -58,6 +58,27 @@ return { -- Fuzzy Finder (files, lsp, etc)
           require('telescope.themes').get_dropdown(),
         },
       },
+      defaults = {
+        file_ignore_patterns = { '^.git/' },
+        hidden = true,
+        vimgrep_arguments = {
+          'rg',
+          '--color=never',
+          '--no-heading',
+          '--with-filename',
+          '--line-number',
+          '--column',
+          '--smart-case',
+          '--hidden',
+          '--glob',
+          '!.git/*',
+        },
+      },
+      pickers = {
+        find_files = {
+          hidden = true,
+        },
+      },
     }
 
     -- Enable Telescope extensions if they are installed

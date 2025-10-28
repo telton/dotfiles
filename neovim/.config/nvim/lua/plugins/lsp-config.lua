@@ -216,8 +216,12 @@ return {
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
-        -- ts_ls = {},
+        ts_ls = {
+          cmd = { 'typescript-language-server' },
+        },
         --
+
+        svelte = {},
 
         lua_ls = {
           cmd = { 'lua-language-server' },
@@ -235,6 +239,7 @@ return {
         },
       }
 
+      -- Ensure we have the correct language servers installed
       require('mason-lspconfig').setup {
         ensure_installed = {},
         automatic_installation = false,
@@ -248,6 +253,25 @@ return {
             require('lspconfig')[server_name].setup(server)
           end,
         },
+      }
+      
+      -- Manual setup for Svelte since we're using nix
+      local lspconfig = require('lspconfig')
+      local configs = require('lspconfig.configs')
+      
+      if not configs.svelte then
+        configs.svelte = {
+          default_config = {
+            cmd = { 'svelteserver', '--stdio' },
+            filetypes = { 'svelte' },
+            root_dir = lspconfig.util.root_pattern('svelte.config.js', 'svelte.config.mjs', 'svelte.config.cjs', 'package.json'),
+            settings = {},
+          },
+        }
+      end
+      
+      lspconfig.svelte.setup {
+        capabilities = capabilities,
       }
     end,
   },

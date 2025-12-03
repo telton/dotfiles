@@ -52,6 +52,46 @@ return {
 
           local client = vim.lsp.get_client_by_id(event.data.client_id)
 
+          -- TypeScript import sorting on save
+          if client and client.name == 'ts_ls' then
+            vim.api.nvim_create_autocmd('BufWritePre', {
+              buffer = event.buf,
+              callback = function()
+                local params = vim.lsp.util.make_range_params()
+                params.context = { only = { 'source.organizeImports' } }
+                local result = vim.lsp.buf_request_sync(0, 'textDocument/codeAction', params, 3000)
+                for cid, res in pairs(result or {}) do
+                  for _, r in pairs(res.result or {}) do
+                    if r.edit then
+                      local enc = (vim.lsp.get_client_by_id(cid) or {}).offset_encoding or 'utf-16'
+                      vim.lsp.util.apply_workspace_edit(r.edit, enc)
+                    end
+                  end
+                end
+              end,
+            })
+          end
+
+          -- Go import organization on save
+          if client and client.name == 'gopls' then
+            vim.api.nvim_create_autocmd('BufWritePre', {
+              buffer = event.buf,
+              callback = function()
+                local params = vim.lsp.util.make_range_params()
+                params.context = { only = { 'source.organizeImports' } }
+                local result = vim.lsp.buf_request_sync(0, 'textDocument/codeAction', params, 3000)
+                for cid, res in pairs(result or {}) do
+                  for _, r in pairs(res.result or {}) do
+                    if r.edit then
+                      local enc = (vim.lsp.get_client_by_id(cid) or {}).offset_encoding or 'utf-16'
+                      vim.lsp.util.apply_workspace_edit(r.edit, enc)
+                    end
+                  end
+                end
+              end,
+            })
+          end
+
           -- Document highlight on cursor hold
           if client and client_supports_method(client, vim.lsp.protocol.Methods.textDocument_documentHighlight, event.buf) then
             local highlight_augroup = vim.api.nvim_create_augroup('lsp-highlight', { clear = false })
@@ -109,6 +149,12 @@ return {
 
       -- Get capabilities from blink.cmp
       local capabilities = require('blink.cmp').get_lsp_capabilities()
+      
+      -- Enable additional completion details
+      capabilities.textDocument.completion.completionItem.labelDetailsSupport = true
+      capabilities.textDocument.completion.completionItem.resolveSupport = {
+        properties = { 'detail', 'documentation', 'additionalTextEdits' }
+      }
 
       -- Global LSP configuration (applies to all servers)
       vim.lsp.config('*', {
@@ -119,10 +165,78 @@ return {
       -- Just add a new entry to enable a language server!
       local servers = {
         -- Go
-        gopls = {},
+        gopls = {
+          settings = {
+            gopls = {
+              completeUnimported = true,
+              usePlaceholders = true,
+              analyses = {
+                unusedparams = true,
+              },
+            },
+          },
+        },
 
         -- TypeScript/JavaScript
-        ts_ls = {},
+        ts_ls = {
+          settings = {
+            typescript = {
+              includePackageJsonAutoImports = 'on',
+              suggest = {
+                includeCompletionsForModuleExports = true,
+                includeCompletionsForImportStatements = false,
+                includeCompletionsWithSnippetText = false,
+                includeAutomaticOptionalChainCompletions = false,
+              },
+              preferences = {
+                includePackageJsonAutoImports = 'on',
+                allowIncompleteCompletions = true,
+                allowRenameOfImportPath = false,
+              },
+              inlayHints = {
+                includeInlayParameterNameHints = 'none',
+                includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+                includeInlayFunctionParameterTypeHints = false,
+                includeInlayVariableTypeHints = false,
+                includeInlayPropertyDeclarationTypeHints = false,
+                includeInlayFunctionLikeReturnTypeHints = false,
+                includeInlayEnumMemberValueHints = false,
+              },
+            },
+            javascript = {
+              includePackageJsonAutoImports = 'on',
+              suggest = {
+                includeCompletionsForModuleExports = true,
+                includeCompletionsForImportStatements = false,
+                includeCompletionsWithSnippetText = false,
+                includeAutomaticOptionalChainCompletions = false,
+              },
+              preferences = {
+                includePackageJsonAutoImports = 'on',
+                allowIncompleteCompletions = true,
+                allowRenameOfImportPath = false,
+              },
+              inlayHints = {
+                includeInlayParameterNameHints = 'none',
+                includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+                includeInlayFunctionParameterTypeHints = false,
+                includeInlayVariableTypeHints = false,
+                includeInlayPropertyDeclarationTypeHints = false,
+                includeInlayFunctionLikeReturnTypeHints = false,
+                includeInlayEnumMemberValueHints = false,
+              },
+            },
+            completions = {
+              completeFunctionCalls = false,
+            },
+          },
+          init_options = {
+            maxTsServerMemory = 8192,
+            tsserver = {
+              maxTsServerMemory = 8192,
+            },
+          },
+        },
 
         -- Svelte
         svelte = {},

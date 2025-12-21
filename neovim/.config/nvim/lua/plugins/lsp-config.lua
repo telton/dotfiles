@@ -57,14 +57,29 @@ return {
             vim.api.nvim_create_autocmd('BufWritePre', {
               buffer = event.buf,
               callback = function()
-                local params = vim.lsp.util.make_range_params()
-                params.context = { only = { 'source.organizeImports' } }
-                local result = vim.lsp.buf_request_sync(0, 'textDocument/codeAction', params, 3000)
-                for cid, res in pairs(result or {}) do
-                  for _, r in pairs(res.result or {}) do
-                    if r.edit then
-                      local enc = (vim.lsp.get_client_by_id(cid) or {}).offset_encoding or 'utf-16'
-                      vim.lsp.util.apply_workspace_edit(r.edit, enc)
+                local params = {
+                  textDocument = vim.lsp.util.make_text_document_params(),
+                  range = { start = { line = 0, character = 0 }, ['end'] = { line = 0, character = 0 } },
+                  context = {
+                    diagnostics = {},
+                    ---@diagnostic disable-next-line: assign-type-mismatch
+                    only = { 'source.removeUnusedImports.ts' },
+                  },
+                }
+
+                local result = vim.lsp.buf_request_sync(0, 'textDocument/codeAction', params, 1000)
+                if not result or vim.tbl_isempty(result) then
+                  return
+                end
+
+                for _, res in pairs(result) do
+                  if res.result then
+                    for _, action in pairs(res.result) do
+                      if action.edit then
+                        vim.lsp.util.apply_workspace_edit(action.edit, 'utf-16')
+                      elseif action.command then
+                        vim.lsp.buf.execute_command(action.command)
+                      end
                     end
                   end
                 end
@@ -77,17 +92,14 @@ return {
             vim.api.nvim_create_autocmd('BufWritePre', {
               buffer = event.buf,
               callback = function()
-                local params = vim.lsp.util.make_range_params()
-                params.context = { only = { 'source.organizeImports' } }
-                local result = vim.lsp.buf_request_sync(0, 'textDocument/codeAction', params, 3000)
-                for cid, res in pairs(result or {}) do
-                  for _, r in pairs(res.result or {}) do
-                    if r.edit then
-                      local enc = (vim.lsp.get_client_by_id(cid) or {}).offset_encoding or 'utf-16'
-                      vim.lsp.util.apply_workspace_edit(r.edit, enc)
-                    end
-                  end
-                end
+                vim.lsp.buf.code_action {
+                  context = {
+                    only = { 'source.organizeImports' },
+                    diagnostics = {},
+                  },
+                  apply = true,
+                }
+                vim.wait(100)
               end,
             })
           end
@@ -149,11 +161,11 @@ return {
 
       -- Get capabilities from blink.cmp
       local capabilities = require('blink.cmp').get_lsp_capabilities()
-      
+
       -- Enable additional completion details
       capabilities.textDocument.completion.completionItem.labelDetailsSupport = true
       capabilities.textDocument.completion.completionItem.resolveSupport = {
-        properties = { 'detail', 'documentation', 'additionalTextEdits' }
+        properties = { 'detail', 'documentation', 'additionalTextEdits' },
       }
 
       -- Global LSP configuration (applies to all servers)

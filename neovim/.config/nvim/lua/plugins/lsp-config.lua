@@ -92,14 +92,31 @@ return {
             vim.api.nvim_create_autocmd('BufWritePre', {
               buffer = event.buf,
               callback = function()
-                vim.lsp.buf.code_action {
+                local params = {
+                  textDocument = vim.lsp.util.make_text_document_params(),
+                  range = { start = { line = 0, character = 0 }, ['end'] = { line = 0, character = 0 } },
                   context = {
                     only = { 'source.organizeImports' },
                     diagnostics = {},
                   },
-                  apply = true,
                 }
-                vim.wait(100)
+
+                local result = vim.lsp.buf_request_sync(0, 'textDocument/codeAction', params, 1000)
+                if not result or vim.tbl_isempty(result) then
+                  return
+                end
+
+                for _, res in pairs(result) do
+                  if res.result then
+                    for _, action in pairs(res.result) do
+                      if action.edit then
+                        vim.lsp.util.apply_workspace_edit(action.edit, 'utf-16')
+                      elseif action.command then
+                        vim.lsp.buf.execute_command(action.command)
+                      end
+                    end
+                  end
+                end
               end,
             })
           end

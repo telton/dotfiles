@@ -283,8 +283,25 @@ return {
           },
         },
 
+        -- Rust
+        rust_analyzer = {
+          settings = {
+            ['rust-analyzer'] = {
+              checkOnSave = true,
+              check = {
+                command = 'clippy',
+              },
+              cargo = {
+                allFeatures = true,
+              },
+              procMacro = {
+                enable = true,
+              },
+            },
+          },
+        },
+
         -- Add more servers here as needed:
-        -- rust_analyzer = {},
         -- pyright = {},
         -- clangd = {},
       }

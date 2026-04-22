@@ -26,7 +26,6 @@ require('lazy').setup {
   install = { colorscheme = { 'catppuccin-frappe' } },
   -- automatically check for plugin updates
   checker = { 
-    enabled = true,
-    frequency = 86400, -- check once per day (24 * 60 * 60 seconds)
+    enabled = false,
   },
 }
